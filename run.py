@@ -1,4 +1,6 @@
-# rock, paper, scissors, lizard, spock
+'''
+rock, paper, scissors, lizard, spock
+'''
 
 from random import randint
 
@@ -62,10 +64,16 @@ def the_game(player):
             print("Are you sure you wrote r, p, s, l or sp?")
             player = False
 
-            
+
 play_again = ''
 
+
 def start_over(play_again):
+    '''
+    Asks the player if he/she wants to play again.
+    If y, the game starts again and if n, the loop
+    breaks.
+    '''
     while True:
         play_again = input('Play again? y/n? \n')
 

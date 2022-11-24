@@ -27,38 +27,38 @@ def the_game(player):
         elif player == 'r':
             if computer == 'p' or computer == 'sp':
                 print("Oh, you lost...")
-                print(f'computers chose was: {computer}')
+                print(f'computers choise was: {computer}')
             else:
                 print("You win!")
-                print(f'computers chose was: {computer}')
+                print(f'computers choise was: {computer}')
         elif player == 'p':
             if computer == 's' or computer == 'l':
                 print("Oh, you lost...")
-                print(f'computers chose was: {computer}')
+                print(f'computers choise was: {computer}')
             else:
                 print("You win!")
-                print(f'computers chose was: {computer}')
+                print(f'computers choise was: {computer}')
         elif player == 's':
             if computer == 'r' or computer == 'sp':
                 print("Oh, you lost...")
-                print(f'computers chose was: {computer}')
+                print(f'computers choise was: {computer}')
             else:
                 print("You win!")
                 print(f'computers chose was: {computer}')
         elif player == 'l':
             if computer == 's' or computer == 'r':
                 print("Oh, you lost...")
-                print(f'computers chose was: {computer}')
+                print(f'computers choise was: {computer}')
             else:
                 print("You win!")
-                print(f'computers chose was: {computer}')
+                print(f'computers choise was: {computer}')
         elif player == 'sp':
             if computer == 'p' or computer == 'l':
                 print("Oh, you lost...")
-                print(f'computers chose was: {computer}')
+                print(f'computers choise was: {computer}')
             else:
                 print("You win!")
-                print(f'computers chose was: {computer}')
+                print(f'computers choise was: {computer}')
         else:
             print("The input is not valid.")
             print("Are you sure you wrote r, p, s, l or sp?")

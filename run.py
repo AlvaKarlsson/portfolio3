@@ -12,10 +12,11 @@ print('Input should be: r = rock, s = scissors, p = paper')
 
 player = False
 
-def the_game(player):
+def the_game(player):  
     '''
-    A function to check if the input is valid, if the computer wins or the player wins. If
-    the input isn't valid, the terminal will ask for the players choise again.
+    A function to check if the input is valid, if the computer 
+    wins or the player wins. If the input isn't valid, 
+    the terminal will ask for the players choise again.
     '''
     while player is False:
         player = input('Write your choise here:\n')

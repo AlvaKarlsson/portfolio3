@@ -19,17 +19,23 @@ while player is False:
     elif player == 'r':
         if computer == 'p':
             print("Oh, you lost...")
+            print(f'computers chose was: {computer}')
         else:
             print("You win!")
+            print(f'computers chose was: {computer}')
     elif player == 'p':
         if computer == 's':
             print("Oh, you lost...")
+            print(f'computers chose was: {computer}')
         else:
             print("You win!")
+            print(f'computers chose was: {computer}')
     elif player == 's':
         if computer == 'r':
             print("Oh, you lost...")
+            print(f'computers chose was: {computer}')
         else:
             print("You win!")
+            print(f'computers chose was: {computer}')
     else:
         print("The input is not valid")

@@ -62,6 +62,22 @@ def the_game(player):
             print("Are you sure you wrote r, p, s, l or sp?")
             player = False
 
+            
+play_again = ''
+
+def start_over(play_again):
+    while True:
+        play_again = input('Play again? y/n? \n')
+
+        if play_again == 'y':
+            print("You pressed y, let's play again!\n")
+            the_game(player)
+        elif play_again == 'n':
+            print('You pressed n, thanks for playing!')
+            break
+        else:
+            print('Press y or n')
+
 
 print('Hi and welcome to "Rock, Paper, Scissors, Lizard, Spock"!\n')
 print('The rules are:')
@@ -71,17 +87,4 @@ print('Paper beats Rock and Spock,')
 print('Lizard beats paper and Spock,')
 print('Spock beats Rock and Scissors\n')
 the_game(player)
-
-play_again = ''
-
-while True:
-    play_again = input('Play again? y/n? \n')
-
-    if play_again == 'y':
-        print("You pressed y, let's play again!\n")
-        the_game(player)
-    elif play_again == 'n':
-        print('You pressed n, thanks for playing!')
-        break
-    else:
-        print('Press y or n')
+start_over(play_again)

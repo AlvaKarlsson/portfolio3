@@ -58,7 +58,7 @@ def the_game(player):
                 print("You win!")
                 print(f'computers chose was: {computer}')
         else:
-            print("The input is not valid. Are you sure you wrote r, p or s?")
+            print("The input is not valid. Are you sure you wrote r, p, s, l or sp?")
             player = False
 
 the_game(player)

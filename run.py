@@ -15,7 +15,7 @@ print('Paper beats Rock and Spock,')
 print('Lizard beats paper and Spock,')
 print('Spock beats Rock and Scissors\n')
 print('Input should be:')
-print('r = rock, s = scissors, p = paper, l = lizard, sp = spock')
+print('r = rock, s = scissors, p = paper, l = lizard, sp = spock\n')
 
 player = False
 
@@ -48,9 +48,15 @@ def the_game(player):
             if computer == 'r' or computer == 'sp':
                 print("Oh, you lost...")
                 print(f'computers chose was: {computer}')
+            else:
+                print("You win!")
+                print(f'computers chose was: {computer}')
         elif player == 'l':
             if computer == 's' or computer == 'r':
                 print("Oh, you lost...")
+                print(f'computers chose was: {computer}')
+            else:
+                print("You win!")
                 print(f'computers chose was: {computer}')
         elif player == 'sp':
             if computer == 'p' or computer == 'l':

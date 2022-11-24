@@ -7,16 +7,6 @@ alternatives = ['r', 'p', 's', 'l', 'sp']
 
 computer = alternatives[randint(0, 4)]
 
-print('Hi and welcome to "Rock, Paper, Scissors, Lizard, Spock"!\n')
-print('The rules are:')
-print('Rock beats Scissors and Lizard,')
-print('Scissors beats Paper and Lizard,')
-print('Paper beats Rock and Spock,')
-print('Lizard beats paper and Spock,')
-print('Spock beats Rock and Scissors\n')
-print('Input should be:')
-print('r = rock, s = scissors, p = paper, l = lizard, sp = spock\n')
-
 player = False
 
 
@@ -27,6 +17,8 @@ def the_game(player):
     the terminal will ask for the players choise again.
     '''
     while player is False:
+        print('Input should be:')
+        print('r = rock, s = scissors, p = paper, l = lizard, sp = spock\n')
         player = input('Write your choise here:\n')
         if player == computer:
             print("That's a tie!")
@@ -71,4 +63,25 @@ def the_game(player):
             player = False
 
 
+print('Hi and welcome to "Rock, Paper, Scissors, Lizard, Spock"!\n')
+print('The rules are:')
+print('Rock beats Scissors and Lizard,')
+print('Scissors beats Paper and Lizard,')
+print('Paper beats Rock and Spock,')
+print('Lizard beats paper and Spock,')
+print('Spock beats Rock and Scissors\n')
 the_game(player)
+
+play_again = ''
+
+while True:
+    play_again = input('Play again? y/n? \n')
+
+    if play_again == 'y':
+        print("You pressed y, let's play again!\n")
+        the_game(player)
+    elif play_again == 'n':
+        print('You pressed n, thanks for playing!')
+        break
+    else:
+        print('Press y or n')

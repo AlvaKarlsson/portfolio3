@@ -1,27 +1,29 @@
-#rock, paper, scissor, lizard, spock
+# rock, paper, scissors, lizard, spock
 
 from random import randint
 
 alternatives = ['r', 'p', 's', 'l', 'sp']
-#r = Rock, p = Paper, s = Scissors, l = Lizard, sp = Spock
+# r = Rock, p = Paper, s = Scissors, l = Lizard, sp = Spock
 
 computer = alternatives[randint(0, 4)]
 
 print('Hi and welcome to "Rock, Paper, Scissors, Lizard, Spock"!\n')
 print('The rules are:')
-print('Rock beats Scissors and Lizard,') 
+print('Rock beats Scissors and Lizard,')
 print('Scissors beats Paper and Lizard,')
-print('Paper beats Rock and Spock,') 
+print('Paper beats Rock and Spock,')
 print('Lizard beats paper and Spock,')
 print('Spock beats Rock and Scissors\n')
-print('Input should be: r = rock, s = scissors, p = paper, l = lizard, sp = spock')
+print('Input should be:')
+print('r = rock, s = scissors, p = paper, l = lizard, sp = spock')
 
 player = False
 
-def the_game(player):   
+
+def the_game(player):
     '''
-    A function to check if the input is valid, if the computer 
-    wins or the player wins. If the input isn't valid, 
+    A function to check if the input is valid, if the computer
+    wins or the player wins. If the input isn't valid,
     the terminal will ask for the players choise again.
     '''
     while player is False:
@@ -58,7 +60,9 @@ def the_game(player):
                 print("You win!")
                 print(f'computers chose was: {computer}')
         else:
-            print("The input is not valid. Are you sure you wrote r, p, s, l or sp?")
+            print("The input is not valid.")
+            print("Are you sure you wrote r, p, s, l or sp?")
             player = False
+
 
 the_game(player)

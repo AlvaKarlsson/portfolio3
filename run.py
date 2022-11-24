@@ -1,18 +1,24 @@
+#rock, paper, scissor, lizard, spock
+
 from random import randint
 
-alternatives = ['r', 'p', 's']
-#r = Rock, p = Paper, s = Scissors
+alternatives = ['r', 'p', 's', 'l', 'sp']
+#r = Rock, p = Paper, s = Scissors, l = Lizard, sp = Spock
 
-computer = alternatives[randint(0, 2)]
+computer = alternatives[randint(0, 4)]
 
-print('Hi and welcome to "Rock, Paper, Scissors"!\n')
+print('Hi and welcome to "Rock, Paper, Scissors, Lizard, Spock"!\n')
 print('The rules are:')
-print('Rock beats Scissors, Scissors beats Paper and Paper beats Rock\n')
-print('Input should be: r = rock, s = scissors, p = paper')
+print('Rock beats Scissors and Lizard,') 
+print('Scissors beats Paper and Lizard,')
+print('Paper beats Rock and Spock,') 
+print('Lizard beats paper and Spock,')
+print('Spock beats Rock and Scissors\n')
+print('Input should be: r = rock, s = scissors, p = paper, l = lizard, sp = spock')
 
 player = False
 
-def the_game(player):  
+def the_game(player):   
     '''
     A function to check if the input is valid, if the computer 
     wins or the player wins. If the input isn't valid, 
@@ -23,21 +29,29 @@ def the_game(player):
         if player == computer:
             print("That's a tie!")
         elif player == 'r':
-            if computer == 'p':
+            if computer == 'p' or computer == 'sp':
                 print("Oh, you lost...")
                 print(f'computers chose was: {computer}')
             else:
                 print("You win!")
                 print(f'computers chose was: {computer}')
         elif player == 'p':
-            if computer == 's':
+            if computer == 's' or computer == 'l':
                 print("Oh, you lost...")
                 print(f'computers chose was: {computer}')
             else:
                 print("You win!")
                 print(f'computers chose was: {computer}')
         elif player == 's':
-            if computer == 'r':
+            if computer == 'r' or computer == 'sp':
+                print("Oh, you lost...")
+                print(f'computers chose was: {computer}')
+        elif player == 'l':
+            if computer == 's' or computer == 'r':
+                print("Oh, you lost...")
+                print(f'computers chose was: {computer}')
+        elif player == 'sp':
+            if computer == 'p' or computer == 'l':
                 print("Oh, you lost...")
                 print(f'computers chose was: {computer}')
             else:

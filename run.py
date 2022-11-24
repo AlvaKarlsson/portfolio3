@@ -75,7 +75,7 @@ def start_over(play_again):
     breaks.
     '''
     while True:
-        play_again = input('Play again? y/n? \n')
+        play_again = input('Play again? y/n?\n')
 
         if play_again == 'y':
             print("You pressed y, let's play again!\n")
@@ -84,7 +84,7 @@ def start_over(play_again):
             print('You pressed n, thanks for playing!')
             break
         else:
-            print('Press y or n')
+            print('Invalid, press y or n')
 
 
 print('Hi and welcome to "Rock, Paper, Scissors, Lizard, Spock"!\n')

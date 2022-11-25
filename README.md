@@ -34,3 +34,26 @@ The player will have to chose what you want to play, rock, paper, scissors, liza
   
 ![Play again y](https://user-images.githubusercontent.com/114992573/203928852-bdf73e8c-9a8e-4653-a9fb-60be464a7f14.png)
 
+## Testing
+The code has been tested in different ways to make sure it works in every way.
+
+- All written code passed the PEP8 test with no errors 
+- The game works within the deployed Heroku terminal 
+- I have also tried to give tha terminal invalid types of input and the error message appropriate for the ocation is shown to the user
+
+## Bugs
+- No bugs found or remaining in the code when deployed
+
+## Deployment
+- The deployed version of the project works via Code Institute's mock terminal on the Heroku page.
+- The original code was written in GitHub
+
+Deployment step by step:
+- Create new app in Heroku
+- Add buildpacks to the app called Python nad NodeJS
+  - Important to have them in that order!
+- Choose way of deployment, I chose "Manual Deploy"
+- Then press deploy and Heroku deploys the project so it's ready to go
+
+## Credits
+- Code Institute for the deployment guide

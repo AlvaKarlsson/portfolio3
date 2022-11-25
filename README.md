@@ -34,6 +34,11 @@ The player will have to chose what you want to play, rock, paper, scissors, liza
   
 ![Play again y](https://user-images.githubusercontent.com/114992573/203928852-bdf73e8c-9a8e-4653-a9fb-60be464a7f14.png)
 
+## Data Model
+To include some type of data model, I chose to do a Player class as a model that worked with the type of project I constructed.
+
+The class stores the choises both the computer and the player has and are later compared with eachother to see who won or not.
+
 ## Testing
 The code has been tested in different ways to make sure it works in every way.
 
@@ -46,7 +51,7 @@ The code has been tested in different ways to make sure it works in every way.
 
 ## Deployment
 - The deployed version of the project works via Code Institute's mock terminal on the Heroku page.
-- The original code was written in GitHub
+- The original code was written in GitPod
 
 Deployment step by step:
 - Create new app in Heroku

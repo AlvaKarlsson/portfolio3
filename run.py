@@ -4,10 +4,30 @@ rock, paper, scissors, lizard, spock
 
 from random import randint
 
+
+class Player:
+    '''
+    A class for the player
+    '''
+    def __init__(self):
+        self.choise = ''
+
+    def setChoise(self, choise):
+        '''
+        Set the choise
+        '''
+        if choise:
+            self.choise = choise
+
+    def getChoise(self):
+        '''
+        get the choise
+        '''
+        return self.choise
+
+
 alternatives = ['r', 'p', 's', 'l', 'sp']
 # r = Rock, p = Paper, s = Scissors, l = Lizard, sp = Spock
-
-computer = alternatives[randint(0, 4)]
 
 player = False
 
@@ -18,47 +38,54 @@ def the_game(player):
     wins or the player wins. If the input isn't valid,
     the terminal will ask for the players choise again.
     '''
+    player_one = Player()
+    player_two = Player()
+
     while player is False:
+        computer = alternatives[randint(0, 4)]
+        player_two.setChoise(computer)
         print('Input should be:')
         print('r = rock, s = scissors, p = paper, l = lizard, sp = spock\n')
         player = input('Write your choise here:\n')
-        if player == computer:
+        player_one.setChoise(player)
+
+        if player_one.getChoise() == player_two.getChoise():
             print("That's a tie!")
-        elif player == 'r':
-            if computer == 'p' or computer == 'sp':
+        elif player_one.getChoise() == 'r':
+            if player_two.getChoise() == 'p' or player_two.getChoise() == 'sp':
                 print("Oh, you lost...")
-                print(f'computers choise was: {computer}')
+                print(f'computers choise was: {player_two.getChoise()}')
             else:
                 print("You win!")
-                print(f'computers choise was: {computer}')
-        elif player == 'p':
-            if computer == 's' or computer == 'l':
+                print(f'computers choise was: {player_two.getChoise()}')
+        elif player_one.getChoise() == 'p':
+            if player_two.getChoise() == 's' or player_two.getChoise() == 'l':
                 print("Oh, you lost...")
-                print(f'computers choise was: {computer}')
+                print(f'computers choise was: {player_two.getChoise()}')
             else:
                 print("You win!")
-                print(f'computers choise was: {computer}')
-        elif player == 's':
-            if computer == 'r' or computer == 'sp':
+                print(f'computers choise was: {player_two.getChoise()}')
+        elif player_one.getChoise() == 's':
+            if player_two.getChoise() == 'r' or player_two.getChoise() == 'sp':
                 print("Oh, you lost...")
-                print(f'computers choise was: {computer}')
+                print(f'computers choise was: {player_two.getChoise()}')
             else:
                 print("You win!")
-                print(f'computers chose was: {computer}')
-        elif player == 'l':
-            if computer == 's' or computer == 'r':
+                print(f'computers chose was: {player_two.getChoise()}')
+        elif player_one.getChoise() == 'l':
+            if player_two.getChoise() == 's' or player_two.getChoise() == 'r':
                 print("Oh, you lost...")
-                print(f'computers choise was: {computer}')
+                print(f'computers choise was: {player_two.getChoise()}')
             else:
                 print("You win!")
-                print(f'computers choise was: {computer}')
-        elif player == 'sp':
-            if computer == 'p' or computer == 'l':
+                print(f'computers choise was: {player_two.getChoise()}')
+        elif player_one.getChoise() == 'sp':
+            if player_two.getChoise() == 'p' or player_two.getChoise() == 'l':
                 print("Oh, you lost...")
-                print(f'computers choise was: {computer}')
+                print(f'computers choise was: {player_two.getChoise()}')
             else:
                 print("You win!")
-                print(f'computers choise was: {computer}')
+                print(f'computers choise was: {player_two.getChoise()}')
         else:
             print("The input is not valid.")
             print("Are you sure you wrote r, p, s, l or sp?")

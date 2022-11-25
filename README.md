@@ -1,31 +1,36 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors, Lizard, Spock
+A terminal game for the ones that love the usual rock, paper, scissor game but wants something extra. Instead of the usual game, there is two more alternatives to choose that have different outcomes depending on the computers choise. 
 
-Welcome Alva Karlsson,
+[Here is a link to the deployed site](https://rock-paper-scissors-special.herokuapp.com/)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+![Responsive design](https://user-images.githubusercontent.com/114992573/203925275-246d0f4b-f226-4b36-9e73-3d7cd062f85b.png)
 
-## Reminders
+## How it works
+The game is bery similar to the original game "rock, paper, scissors". The differens is that the alternatives Lizard and Spock has been added. This is from the TV-show "The Big Bang Theory" from the start and has since that grown outside the series fandom.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+The rules are simple: Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors (As Sheldon himself explains it in the episode). I the deployed verison, the rules are not written in this exact way. It is a bit more "compressed" so the user easily sees what alternative beats the other.
 
-## Creating the Heroku app
+The player will have to chose what you want to play, rock, paper, scissors, lizard or spock. After submitting the answer, the computers choise will apear on the screen and a text that says if there was a tie, the player won or the computer won. Then the player will be asked to play again, and by writing 'y' or 'n' there will be different outcomes. If the player writes 'y', the terminal will ask for another choise and restart the game. If the player writes 'n', then the terminal will write out "You pressed 'n', thanks for playing!" and stop running.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Features
+- The computer is the opponent and its' choise are always randomized
 
-1. `heroku/python`
-2. `heroku/nodejs`
+![Computer](https://user-images.githubusercontent.com/114992573/203928181-740c1a5e-a557-4a02-8d15-144d26d235f4.png)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+- Easy input to make the game as easy as possible to play
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+![Choise](https://user-images.githubusercontent.com/114992573/203928334-1081827f-fcfc-4182-9322-35fc5cd97849.png)
 
-Connect your GitHub repository and deploy as normal.
+- If the input isn't valid, the terminal will tell the user right away
 
-## Constraints
+![Invalid](https://user-images.githubusercontent.com/114992573/203929206-b6951dfe-4466-41a1-9c55-bc0cd5ade98a.png)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+- After the round is done, the player have the option to play again or stop
+  - If the player writes n, the game will stop
+  
+![Play again n](https://user-images.githubusercontent.com/114992573/203928646-3399b3b0-c089-4ec3-8e45-839f411f9828.png)
 
------
-Happy coding!
+  - If the player writes y, the game starts over
+  
+![Play again y](https://user-images.githubusercontent.com/114992573/203928852-bdf73e8c-9a8e-4653-a9fb-60be464a7f14.png)
+
